@@ -1,0 +1,39 @@
+{
+  "name": "github-minimal-vscode-theme",
+  "displayName": "GitHub Minimal Theme",
+  "description": "A minimal GitHub theme for VS Code",
+  "version": "0.0.0",
+  "preview": true,
+  "publisher": "Dominic Egginton",
+  "galleryBanner": {
+    "color": "#24292e",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominicegginton/github-minimal-vscode-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dominicegginton/github-minimal-vscode-theme/issues"
+  },
+  "engines": {
+		"vscode": "^1.43.0"
+	},
+	"categories": [
+		"Themes"
+	],
+  "keywords": [
+    "theme",
+    "github",
+    "minimal",
+    "light",
+    "dark"
+  ],
+  "author": {
+    "name": "Dominic Egginton",
+    "email": "dominic.egginton@gmail.com",
+    "url": "https://dominicegginton.dev"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/dominicegginton/github-minimal-vscode-theme#readme"
+}
