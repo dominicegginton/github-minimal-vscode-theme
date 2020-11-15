@@ -17,11 +17,11 @@
     "url": "https://github.com/dominicegginton/github-minimal-vscode-theme/issues"
   },
   "engines": {
-		"vscode": "^1.43.0"
-	},
-	"categories": [
-		"Themes"
-	],
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Themes"
+  ],
   "keywords": [
     "theme",
     "github",
@@ -35,5 +35,11 @@
     "url": "https://dominicegginton.dev"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dominicegginton/github-minimal-vscode-theme#readme"
+  "homepage": "https://github.com/dominicegginton/github-minimal-vscode-theme#readme",
+  "scripts": {
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "^16.0.2"
+  }
 }
