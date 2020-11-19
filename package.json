@@ -40,6 +40,6 @@
     "lint": "standard"
   },
   "devDependencies": {
-    "standard": "^16.0.2"
+    "standard": "^16.0.3"
   }
 }
