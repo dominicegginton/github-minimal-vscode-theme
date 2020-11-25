@@ -286,7 +286,271 @@ function theme ({ name, style }) {
       'charts.green': pick({ light: colors.green[5] }),
       'charts.purple': pick({ light: colors.purple[5] })
     },
-    semanticHighlighting: true
+    semanticHighlighting: true,
+    tokenColors: [
+      {
+        scope: ['comment', 'punctuation.definition.comment', 'string.comment'],
+        settings: {
+          foreground: pick({ light: colors.gray[5] })
+        }
+      },
+      {
+        scope: ['constant', 'entity.name.constant', 'variable.other.constant', 'variable.language'],
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: ['entity', 'entity.name'],
+        settings: {
+          foreground: pick({ light: colors.purple[5] })
+        }
+      },
+      {
+        scope: 'variable.parameter.function',
+        settings: {
+          foreground: editorForeground
+        }
+      },
+      {
+        scope: 'entity.name.tag',
+        settings: {
+          foreground: pick({ light: colors.green[5] })
+        }
+      },
+      {
+        scope: 'keyword',
+        settings: {
+          foreground: pick({ light: colors.red[5] })
+        }
+      },
+      {
+        scope: ['storage', 'storage.type'],
+        settings: {
+          foreground: pick({ light: colors.red[5] })
+        }
+      },
+      {
+        scope: ['storage.modifier.package', 'storage.modifier.import', 'storage.type.java'],
+        settings: {
+          foreground: editorForeground
+        }
+      },
+      {
+        scope: ['string', 'punctuation.definition.string', 'string punctuation.section.embedded source'],
+        settings: {
+          foreground: colors.blue[8]
+        }
+      },
+      {
+        scope: 'support',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'meta.property-name',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'variable',
+        settings: {
+          foreground: pick({ light: colors.orange[5] })
+        }
+      },
+      {
+        scope: 'variable.other',
+        settings: {
+          foreground: editorForeground
+        }
+      },
+      {
+        scope: ['invalid.broken', 'invalid.deprecated', 'invalid.illegal', 'invalid.unimplemented'],
+        settings: {
+          fontStyle: 'italic',
+          foreground: colors.red[7]
+        }
+      },
+      {
+        scope: 'carriage-return',
+        settings: {
+          fontStyle: 'italic underline',
+          background: pick({ light: colors.red[5] }),
+          foreground: editorForeground,
+          content: '^M'
+        }
+      },
+      {
+        scope: 'message.error',
+        settings: {
+          foreground: colors.red[7]
+        }
+      },
+      {
+        scope: 'string source',
+        settings: {
+          foreground: editorForeground
+        }
+      },
+      {
+        scope: 'string variable',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: ['source.regexp', 'string.regexp'],
+        settings: {
+          foreground: colors.blue[8]
+        }
+      },
+      {
+        scope: ['string.regexp.character-class', 'string.regexp constant.character.escape', 'string.regexp source.ruby.embedded', 'string.regexp string.regexp.arbitrary-repitition'],
+        settings: {
+          foreground: colors.blue[8]
+        }
+      },
+      {
+        scope: 'string.regexp constant.character.escape',
+        settings: {
+          fontStyle: 'bold',
+          foreground: pick({ light: colors.green[5] })
+        }
+      },
+      {
+        scope: 'support.constant',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'support.variable',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'meta.module-reference',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'punctuation.definition.list.begin.markdown',
+        settings: {
+          foreground: pick({ light: colors.orange[5] })
+        }
+      },
+      {
+        scope: ['markup.heading', 'markup.heading entity.name'],
+        settings: {
+          fontStyle: 'bold',
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'markup.quote',
+        settings: {
+          foreground: pick({ light: colors.green[5] })
+        }
+      },
+      {
+        scope: 'markup.italic',
+        settings: {
+          fontStyle: 'italic',
+          foreground: editorForeground
+        }
+      },
+      {
+        scope: 'markup.bold',
+        settings: {
+          fontStyle: 'bold',
+          foreground: editorForeground
+        }
+      },
+      {
+        scope: 'markup.raw',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: ['markup.deleted', 'meta.diff.header.from-file', 'punctuation.definition.deleted'],
+        settings: {
+          foreground: pick({ light: colors.red[5] }),
+          background: colors.red[0]
+
+        }
+      },
+      {
+        scope: ['markup.inserted', 'meta.diff.header.to-file','punctuation.definition.inserted'],
+        settings: {
+          foreground: pick({ light: colors.green[5] }),
+          background: colors.green[0]
+        }
+      },
+      {
+        scope: ['markup.changed', 'punctuation.definition.changed'],
+        settings: {
+          foreground: pick({ light: colors.orange[5] }),
+          background: colors.orange[1]
+        }
+      },
+      {
+        scope: ['markup.ignored', 'markup.untracked'],
+        settings: {
+          foreground: colors.gray[1],
+          background: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'meta.diff.range',
+        settings: {
+          foreground: pick({ light: colors.purple[5] }),
+          fontStyle: 'bold'
+        }
+      },
+      {
+        scope: 'meta.diff.header',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'meta.separator',
+        settings: {
+          fontStyle: 'bold',
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: 'meta.output',
+        settings: {
+          foreground: pick({ light: colors.blue[5] })
+        }
+      },
+      {
+        scope: ['brackethighlighter.tag', 'brackethighlighter.curly', 'brackethighlighter.round', 'brackethighlighter.square', 'brackethighlighter.angle', 'brackethighlighter.quote'],
+        settings: {
+          foreground: pick({ light: colors.gray[5] })
+        }
+      },
+      {
+        scope: 'brackethighlighter.unmatched',
+        settings: {
+          foreground: colors.red[7]
+        }
+      },
+      {
+        scope: ['constant.other.reference.link', 'string.other.link'],
+        settings: {
+          foreground: colors.blue[8],
+          fontStyle: 'underline'
+        }
+      }
+    ]
   }
 }
 
