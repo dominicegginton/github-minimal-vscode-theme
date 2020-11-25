@@ -29,6 +29,15 @@
     "light",
     "dark"
   ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "GitHub Minimal Light",
+        "uiTheme": "vs",
+        "path": "./themes/light.json"
+      }
+    ]
+  },
   "author": {
     "name": "Dominic Egginton",
     "email": "dominic.egginton@gmail.com",
@@ -37,9 +46,14 @@
   "license": "MIT",
   "homepage": "https://github.com/dominicegginton/github-minimal-vscode-theme#readme",
   "scripts": {
+    "dev": "nodemon --watch src src/index.js",
+    "build": "node src/index.js",
     "lint": "standard"
   },
   "devDependencies": {
+    "@primer/primitives": "^3.0.0",
+    "hex-color-opacity": "^0.1.0",
+    "nodemon": "^2.0.6",
     "standard": "^16.0.3"
   }
 }
