@@ -485,7 +485,7 @@ function theme ({ name, style }) {
         }
       },
       {
-        scope: ['markup.inserted', 'meta.diff.header.to-file','punctuation.definition.inserted'],
+        scope: ['markup.inserted', 'meta.diff.header.to-file', 'punctuation.definition.inserted'],
         settings: {
           foreground: pick({ light: colors.green[5] }),
           background: colors.green[0]
