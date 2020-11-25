@@ -4,7 +4,7 @@
   "description": "A minimal GitHub theme for VS Code",
   "version": "0.0.0",
   "preview": true,
-  "publisher": "Dominic Egginton",
+  "publisher": "dominicegginton",
   "galleryBanner": {
     "color": "#24292e",
     "theme": "dark"
