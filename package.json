@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@primer/primitives": "^3.0.0",
-    "hex-color-opacity": "^0.1.0",
+    "hex-color-opacity": "^0.1.1",
     "nodemon": "^2.0.6",
     "standard": "^16.0.3"
   }
