@@ -35,6 +35,11 @@
         "label": "GitHub Minimal Light",
         "uiTheme": "vs",
         "path": "./themes/light.json"
+      },
+      {
+        "label": "Github Minimal Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark.json"
       }
     ]
   },
