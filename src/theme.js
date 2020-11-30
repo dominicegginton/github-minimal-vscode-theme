@@ -291,7 +291,7 @@ function theme ({ name, style }) {
       {
         scope: ['comment', 'punctuation.definition.comment', 'string.comment'],
         settings: {
-          foreground: pick({ light: colors.gray[5], dark: colors.gray[6] })
+          foreground: pick({ light: colors.gray[5], dark: colors.gray[4] })
         }
       },
       {
