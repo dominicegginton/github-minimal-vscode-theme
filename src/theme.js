@@ -339,7 +339,7 @@ function theme ({ name, style }) {
       {
         scope: ['string', 'punctuation.definition.string', 'string punctuation.section.embedded source'],
         settings: {
-          foreground: colors.blue[8]
+          foreground: pick({ light: colors.blue[8], dark: colors.blue[3] })
         }
       },
       {
