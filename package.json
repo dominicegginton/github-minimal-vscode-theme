@@ -2,7 +2,7 @@
   "name": "github-minimal-vscode-theme",
   "displayName": "GitHub Minimal Theme",
   "description": "A minimal GitHub theme for VS Code",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "preview": true,
   "publisher": "dominicegginton",
   "galleryBanner": {
