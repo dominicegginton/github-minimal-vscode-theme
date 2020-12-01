@@ -148,7 +148,7 @@ function theme ({ name, style }) {
       'editor.findRangeHighlightBackground': opacity(pick({ light: colors.gray[5], dark: colors.gray[6] }), 0.2),
       'editor.hoverHighlightBackground': opacity(pick({ light: colors.blue[5], dark: colors.blue[6] }), 0.5),
       'editorLink.activeForeground': pick({ light: colors.blue[5], dark: colors.blue[6] }),
-      'editorWhitespace.foreground': pick({ light: colors.gray[3], dark: colors.blue[7] }),
+      'editorWhitespace.foreground': pick({ light: colors.gray[3], dark: colors.gray[7] }),
       'editorBracketMatch.background': opacity(pick({ light: colors.blue[5], dark: colors.blue[6] }), 0.1),
       'editorBracketMatch.border': opacity(pick({ light: colors.blue[5], dark: colors.blue[6] }), 0.1),
       'editor.foldBackground': pick({ light: colors.gray[0], dark: colors.gray[9] }),
