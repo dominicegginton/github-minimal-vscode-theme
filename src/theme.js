@@ -274,13 +274,13 @@ function theme ({ name, style }) {
       'gitDecoration.conflictingResourceForeground': pick({ light: colors.orange[5], dark: colors.orange[6] }),
       'gitDecoration.submoduleResourceForeground': pick({ light: colors.purple[5], dark: colors.purple[6] }),
 
-      'breadcrumb.focusForeground': pick({ light: colors.blue[5], dark: colors.black[6] }),
+      'breadcrumb.focusForeground': pick({ light: colors.blue[5], dark: colors.blue[6] }),
       'breadcrumbPicker.background': pick({ light: colors.gray[1], dark: colors.gray[9] }),
 
       'charts.foreground': workbenchForeground,
-      'charts.lines': pick({ light: colors.blue[5], dark: colors.black[6] }),
+      'charts.lines': pick({ light: colors.blue[5], dark: colors.blue[6] }),
       'charts.red': pick({ light: colors.red[5], dark: colors.red[6] }),
-      'charts.blue': pick({ light: colors.blue[5], dark: colors.black[6] }),
+      'charts.blue': pick({ light: colors.blue[5], dark: colors.blue[6] }),
       'charts.yellow': pick({ light: colors.yellow[5], dark: colors.yellow[6] }),
       'charts.orange': pick({ light: colors.orange[5], dark: colors.orange[6] }),
       'charts.green': pick({ light: colors.green[5], dark: colors.green[6] }),
