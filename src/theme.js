@@ -298,13 +298,13 @@ function theme ({ name, style }) {
       {
         scope: ['constant', 'entity.name.constant', 'variable.other.constant', 'variable.language'],
         settings: {
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.blue[6], dark: colors.blue[4] })
         }
       },
       {
         scope: ['entity', 'entity.name'],
         settings: {
-          foreground: colors.purple[5]
+          foreground: pick({ light: colors.purple[5], dark: colors.purple[3] })
         }
       },
       {
@@ -316,19 +316,19 @@ function theme ({ name, style }) {
       {
         scope: 'entity.name.tag',
         settings: {
-          foreground: colors.green[6]
+          foreground: pick({ light: colors.green[6], dark: colors.green[4] })
         }
       },
       {
         scope: 'keyword',
         settings: {
-          foreground: pick({ light: colors.red[5], dark: colors.red[6] })
+          foreground: pick({ light: colors.red[5], dark: colors.red[4] })
         }
       },
       {
         scope: ['storage', 'storage.type'],
         settings: {
-          foreground: pick({ light: colors.red[5], dark: colors.red[6] })
+          foreground: pick({ light: colors.red[5], dark: colors.red[4] })
         }
       },
       {
@@ -346,7 +346,7 @@ function theme ({ name, style }) {
       {
         scope: 'support',
         settings: {
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.purple[6], dark: colors.purple[3] })
         }
       },
       {
@@ -358,7 +358,7 @@ function theme ({ name, style }) {
       {
         scope: 'variable',
         settings: {
-          foreground: colors.orange[6]
+          foreground: pick({ light: colors.orange[6], dark: colors.orange[3] })
         }
       },
       {
@@ -371,14 +371,14 @@ function theme ({ name, style }) {
         scope: ['invalid.broken', 'invalid.deprecated', 'invalid.illegal', 'invalid.unimplemented'],
         settings: {
           fontStyle: 'italic',
-          foreground: colors.red[7]
+          foreground: pick({ light: colors.red[7], dark: colors.red[4] })
         }
       },
       {
         scope: 'carriage-return',
         settings: {
           fontStyle: 'italic underline',
-          background: pick({ light: colors.red[5], dark: colors.red[6] }),
+          background: pick({ light: colors.red[5], dark: colors.red[4] }),
           foreground: editorForeground,
           content: '^M'
         }
@@ -386,7 +386,7 @@ function theme ({ name, style }) {
       {
         scope: 'message.error',
         settings: {
-          foreground: colors.red[7]
+          foreground: pick({ light: colors.red[7], dark: colors.red[4] })
         }
       },
       {
@@ -398,63 +398,57 @@ function theme ({ name, style }) {
       {
         scope: 'string variable',
         settings: {
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.blue[6], dark: colors.blue[3] })
         }
       },
       {
-        scope: ['source.regexp', 'string.regexp'],
+        scope: ['source.regexp', 'string.regexp', 'string.regexp.character-class', 'string.regexp constant.character.escape', 'string.regexp source.ruby.embedded', 'string.regexp string.regexp.arbitrary-repitition'],
         settings: {
-          foreground: colors.blue[8]
-        }
-      },
-      {
-        scope: ['string.regexp.character-class', 'string.regexp constant.character.escape', 'string.regexp source.ruby.embedded', 'string.regexp string.regexp.arbitrary-repitition'],
-        settings: {
-          foreground: colors.blue[8]
+          foreground: pick({ light: colors.blue[8], dark: colors.blue[5] })
         }
       },
       {
         scope: 'string.regexp constant.character.escape',
         settings: {
           fontStyle: 'bold',
-          foreground: colors.green[6]
+          foreground: pick({ light: colors.green[6], dark: colors.blue[4] })
         }
       },
       {
         scope: 'support.constant',
         settings: {
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.blue[6], dark: colors.blue[3] })
         }
       },
       {
         scope: 'support.variable',
         settings: {
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.blue[6], dark: colors.blue[3] })
         }
       },
       {
         scope: 'meta.module-reference',
         settings: {
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.blue[6], dark: colors.blue[3] })
         }
       },
       {
         scope: 'punctuation.definition.list.begin.markdown',
         settings: {
-          foreground: colors.orange[6]
+          foreground: pick({ light: colors.orange[6], dark: colors.orange[3] })
         }
       },
       {
         scope: ['markup.heading', 'markup.heading entity.name'],
         settings: {
           fontStyle: 'bold',
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.blue[6], dark: colors.blue[4] })
         }
       },
       {
         scope: 'markup.quote',
         settings: {
-          foreground: colors.green[6]
+          foreground: pick({ light: colors.green[6], dark: colors.green[4] })
         }
       },
       {
@@ -474,7 +468,7 @@ function theme ({ name, style }) {
       {
         scope: 'markup.raw',
         settings: {
-          foreground: colors.blue[6]
+          foreground: pick({ light: colors.blue[6], dark: colors.blue[4] })
         }
       },
       {
@@ -547,7 +541,7 @@ function theme ({ name, style }) {
       {
         scope: ['constant.other.reference.link', 'string.other.link'],
         settings: {
-          foreground: colors.blue[8],
+          foreground: pick({ light: colors.blue[8], dark: colors.blue[4] }),
           fontStyle: 'underline'
         }
       }
